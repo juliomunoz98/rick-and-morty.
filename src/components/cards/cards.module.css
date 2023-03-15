@@ -1,0 +1,7 @@
+
+.carta{
+    display: flex;
+    height: 530px;
+    transition: 3s;
+    background-size: cover;
+}
