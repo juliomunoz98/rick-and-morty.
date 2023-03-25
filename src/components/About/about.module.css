@@ -1,0 +1,19 @@
+.perfil{
+    display:inline-table;
+    width: 500px;
+    height: 400px;
+    margin-top: 4%;
+    border-radius: 20px;
+    border: solid 4px rgb(58, 67, 107);
+    background-image: url("https://1.bp.blogspot.com/-641ZA1C1amk/YJXPCabzHII/AAAAAAAACe8/DT-3Pzc9Wk04ieaouD5gJw_doKALr8rJACLcBGAsYHQ/s1140/programming-code-abstract-technology-background-of-software-deve-picture-id629285904_0.jpg");
+     background-size: 570px;
+     -webkit-text-stroke: 2.5px rgba(10, 10, 10, 0.8);
+     color: rgb(252, 253, 252);
+     font-size: 20px;
+     box-shadow: 0 0 80px rgb(236, 13, 13);
+}
+
+.perfil:hover{
+    scale:calc(1.5);
+    transition: 1s;
+}

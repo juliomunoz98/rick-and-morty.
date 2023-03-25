@@ -1,5 +1,45 @@
 .cabecera{
- 
- background-position: top;
- width: 10%;
+ background-image: url("https://p4.wallpaperbetter.com/wallpaper/131/234/415/rick-and-morty-rick-sanchez-wubalubadubdub-old-people-wallpaper-thumb.jpg");
+ background-position: 0px 159px;
+ box-shadow: 0 0 50px rgb(30, 244, 10);
+ width: 511px;
+ height: 50px;
+ margin-right: 10px;
+ margin-left: 10px;
+ margin-top: 5px;
+ border-radius: 15px;
+ color: rgba(50, 225, 19, 0.7);
+ font-size: 20px; 
+}
+
+.cabecera:hover{
+  border:solid 3px rgb(123, 243, 26);
+}
+
+.sboton{
+  font-family:fantasy;
+  color:rgb(0, 0, 0);
+  font-size: 22px;
+  cursor: pointer;
+  height: 82px;
+   background-image: url("https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif");
+   background-position:50%;
+   -webkit-background-composite:border-box;
+  border-radius: 50%;
+  box-shadow: 0 0 80px rgb(5, 249, 17) ; 
+  border-color: rgb(5, 249, 17);
+  margin-top: -10px;
+  
+    
+}
+
+.sboton:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+.ordenc{
+  display: flex;
+  justify-content: flex-end;
+  
 }

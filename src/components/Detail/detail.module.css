@@ -1,0 +1,25 @@
+.esste{
+    display:grid;
+    border: solid 5px;
+    width:750px;
+   
+
+    
+    
+}
+.borde{
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: left;
+font-family:cursive;
+margin: 5px;
+
+
+}
+.interno{
+    display:grid;
+    margin: 40px;
+}
+
+  

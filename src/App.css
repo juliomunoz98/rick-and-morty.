@@ -1,9 +1,10 @@
 .App {
    text-align: center;
-   background-image: url("https://media2.giphy.com/media/1USKMDPjuH4ovL7J5h/giphy.gif?cid=ecf05e47l9vieclz7ajn83pnhr00hqo7qvt16ge45l08ngpi&rid=giphy.gif&ct=g") ;
+   background-image: url("https://rare-gallery.com/uploads/posts/345116-Rick-and-Morty-Cartoon-TV-Series-Rick-Sanchez-Morty-Smith-Spaceship.jpg") ;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
    background-position: center center;
-   margin: 10px;
+   min-height: 100vh;
 }
+
