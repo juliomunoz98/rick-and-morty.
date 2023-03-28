@@ -24,22 +24,22 @@ export default function Detail(props) {
       }, [detailId]);
 
     return (
-        <div className={styles.esste}>
-            <button onClick={()=> navigate("/home")}>regresar</button>
-        <div className={styles.borde}>
+     <div className={styles.esste}>
+            
+        
           <div className={styles.interno}>
+            <button className={styles.botons} onClick={()=> navigate("/home")}>regresar</button>
             <h1>Name: {character.name}</h1> 
             <h1>Status: {character.status}</h1> 
             <h1>Specie: {character.species}</h1> 
             <h1>Gender: {character.gender}</h1> 
             <h1>Origin: {character.origin?.name}</h1> 
           </div>
-            <img src={character.image} alt="No fount"/>
-        </div>
+            <img className={styles.imags} src={character.image} alt="No fount"/>
+    </div>
           
         
 
-        </div>
     );
 }
 

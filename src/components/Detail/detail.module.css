@@ -1,25 +1,66 @@
 .esste{
-    display:grid;
-    border: solid 5px;
-    width:750px;
-   
-
-    
-    
+    position: absolute;
+    left: 15%;
+    top: 100px;
+    border: solid 2px rgb(198, 7, 141);
+    width:850px;
+    height: 490px;
+    border-radius: 20px;
+    justify-content:center;
+    box-shadow: 0 0 60px rgb(198, 7, 141);
 }
-.borde{
-display:flex;
-justify-content: center;
-align-items: center;
-text-align: left;
-font-family:cursive;
-margin: 5px;
 
-
-}
 .interno{
     display:grid;
-    margin: 40px;
+    position:relative;
+    left: 20px;
+    top: 30px;
+    
+font-family:cursive;
+text-align: left;
+justify-content:start;
+color: rgb(43, 211, 14);
+
+}
+.botons{
+    position:absolute;
+    color: chartreuse;
+    background-color: rgba(240, 7, 201, 0.5);
+    left: 85%;
+    top: -20px;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+.botons:hover{
+  transform: scale(1.2); 
+  box-shadow: 0 0 5px rgba(240, 7, 201),
+  0 0 25px rgba(240, 7, 201),
+  0 0 50px rgba(240, 7, 201),
+ 0 0 100px rgba(240, 7, 201);
 }
 
-  
+.imags{
+   position: absolute;
+   left: 50%;
+   top: 10%;
+   width: 400px;
+   opacity: 0.9;
+   border-radius: 40px;
+perspective: 100px;
+   animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform:rotateY(360deg) translateZ(0px);
+        /* z-index: 10; */
+    }
+    100%{
+        /* z-index: -10; */
+    }
+    to{
+        transform:rotateY(0deg) translateZ(0px);
+    } 
+}
