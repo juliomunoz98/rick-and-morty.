@@ -23,7 +23,7 @@ const validate = (inputs) => {
     if(!validLettersAndNumbers.test(inputs.password)) {
     errors.password = "Debe contener minimo un numero";
     }
-    if (inputs.passsword.length < 6 || inputs.password.length > 10 ) {
+    if (inputs.password.length < 6 || inputs.password.length > 10 ) {
     errors.password = "Debe de tener entre 6 y 10 caracteres";
     }
     return errors;
@@ -65,22 +65,34 @@ const handleSubmit =(event)=>{
 
 
  return(
-    <form className={styles.container} onSubmit={handleSubmit}>
-        
-        <label htmlFor="">Nombre: </label>
+    <div className={styles.bax}>
+        <h2>LOGIN</h2>
+    <form  onSubmit={handleSubmit}>     
+       <div className={styles.inputbax}>
 
-        <input type="text" value={userData.userName} name="userName" onChange={handleChange} className={errors.userName && styles.warning}/>
+        <input type="text" value={userData.userName} name="userName" onChange={handleChange} className={errors.userName && styles.warning} required/>
+
+        <label htmlFor="">Username: </label>       
 
         {errors.userName ? ( <p style={{color: "red"}}>{errors.userName}</p>): null}
 
+        </div>
+        <div className={styles.inputbax}>
+
+        <input type="password" value={userData.password} name="password" onChange={handleChange} className={errors.password && styles.warning}required/>   
+
         <label htmlFor="">Password: </label>
 
-        <input type="password" value={userData.password} name="password" onChange={handleChange} className={errors.password && styles.warning}/>
-
         {errors.password ? ( <p style={{color: "red"}}>{errors.password}</p>) : null}
-         <br />
-        <button type="submit">Login</button>
-    </form>
+
+        </div>
+         
+         <button className={styles.botonsin} type="submit">Login</button>
+    
+       
+      </form>
+    
+ </div>
  )
 }
 

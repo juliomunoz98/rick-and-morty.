@@ -1,9 +1,22 @@
-
 .carta{
-    display: flex;
-    padding: 10%;
-    margin: auto;
-    justify-content: space-evenly;
-    justify-content: center;
-    transition: 3s; 
-};
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 200px;
+  /* height: 300px;
+  width: 300px;
+  animation: rotate 30s linear infinite;
+position: absolute;
+  }
+    @keyframes rotate{
+        0%{
+            transform: perspective(1000px)rotateY(0deg);
+        }
+        100%{
+            transform: perspective(1000px)rotateY(360deg);
+        }  */
+
+}; 
+
+
+

@@ -21,10 +21,10 @@ function App () {
 //   image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
 // };
 const [access, setAccess] = useState(false)
-const userName ="jmuñoz@soyhenry.com"
-const password = "julio12345"
-
-
+const userName ="z"
+const password ="z"
+// jmuñoz@soyhenry.com
+// julio12345
 const onSearch = (id) => {
   fetch(`https://rickandmortyapi.com/api/character/${id}`)
   .then((res) => res.json()) 
@@ -57,8 +57,8 @@ useEffect(() => {
         
         <Routes>
           <Route path='/' element={<Form login={login}/>}/>
-          <Route path= "/home"    element= {<Cards characters= {characters} onClose={onClose}/>}/>
-          <Route path= "/about"    element= {<About/>}/>
+          <Route path= "/home" element= {<Cards characters= {characters} onClose={onClose}/>}/>
+          <Route path= "/about" element= {<About/>}/>
           <Route path= "/detail/:detailId" element= {<Detail />}/>
         </Routes>
 

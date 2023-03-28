@@ -4,10 +4,9 @@
  box-shadow: 0 0 50px rgb(30, 244, 10);
  width: 511px;
  height: 50px;
- margin-right: 10px;
- margin-left: 10px;
- margin-top: 5px;
- border-radius: 15px;
+ margin-left: 18px;
+ margin-top: -48px;
+ border-radius: 20px;
  color: rgba(50, 225, 19, 0.7);
  font-size: 20px; 
 }
@@ -22,13 +21,13 @@
   font-size: 22px;
   cursor: pointer;
   height: 82px;
-   background-image: url("https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif");
+  background-image: url("https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif");
    background-position:50%;
    -webkit-background-composite:border-box;
   border-radius: 50%;
   box-shadow: 0 0 80px rgb(5, 249, 17) ; 
   border-color: rgb(5, 249, 17);
-  margin-top: -10px;
+  margin-top: -68px;
   
     
 }

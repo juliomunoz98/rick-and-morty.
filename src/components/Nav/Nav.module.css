@@ -1,20 +1,35 @@
 .letras{
-    position:absolute;
-    display:grid;
-    grid-template-columns: 150px 150px 150px;
-     padding: 15px;
-     border-radius: 20px;
-     margin-bottom: 20px;
-    -webkit-text-stroke: 5px rgba(235, 18, 18, 0.6);
-     color: rgb(9, 229, 20);
-    font-size: 25px;
-    text-underline-offset: 5px;
-   text-decoration-color: rgb(16, 15, 15) ;
-     background-color: rgba(79, 221, 40, 0.4);      
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: black;
+height: 46px;
+width: 574px;
+border-radius: 20px;
+font-size: 25px;
+border:solid 2px rgb(123, 243, 26);   
+font-weight: bold;    
 };
 
 .letras:hover{
-  display: grid;
-  border: solid 5px white;
-  
+  /* display: block; */
+  /*
+  color: white; */
+  display: flex;
+  transition: 0.5s ease;
 }
+.active{
+color: rgb(77, 255, 0);
+text-underline-offset: 9px;
+
+}
+.disable{
+  text-decoration:none;
+  color: white;
+}
+
+
+
+
+
+

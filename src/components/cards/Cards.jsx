@@ -6,7 +6,8 @@ export default function Cards(props) {
    const { characters } = props;
    return (
    <div className={styles.carta}>
-      {characters.map(({id, name, species, gender, image}) => (
+     {/* <div className={styles.otro}> */}
+       {characters.map(({id, name, species,    gender, image}) => (
          <Card
            id = {id}
           key = {id}
@@ -16,7 +17,8 @@ export default function Cards(props) {
           image= {image}
           onClose= {() => props.onClose(id)}
          />
-       ))}      
-   </div>
+       ))} 
+    </div>    
+   // </div>
    );
 }

@@ -1,83 +1,86 @@
-.cartas{
+.idboton{
+    position:absolute;
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height:541px;
-    border: solid 5px rgb(5, 5, 5);
-    border-radius: 40px;
-    background-color: none;
-    box-shadow: 0 0 20px rgba(123, 3, 251, 10.0) ; 
-    margin: 30px 30px 30px 30px;
-    position: relative;
-}
-
-.cartas:hover {
-    transform: scale(1.2);
+    font-size: 8px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor:auto;
     transition: 0.5s ease;
-} 
-
-
-.lnombre{
+    background-color:transparent;
+    justify-content: space-between;
+    width:200px;
+}
+.button{
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgb(249, 4, 192);
+    width: 15px;
+    height: 15px;
+    margin-right: -5px ;
+    padding: 0px;
+    font-size: 10px;
+    border:solid 1.5px black;
+    cursor: pointer;
+}
+.ids{
+    margin-top: 1px;
+    margin-left: 3px;
+    background-color: rgb(109, 222, 3, 0.5);
+    border-radius: 50px;
+    height: 17px;
+    width: 30px;
+    border:solid 1px rgb(243, 4, 171);
+    
+}
+.nombre{
     color: rgb(73, 195, 39) ;
     font-family:fantasy;
-    box-shadow: 0 0 50px  rgb(5, 239, 16) ;
-    background-color: rgb(14, 195, 195, 0.5) ;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 5px 5px 5px  rgb(129, 4, 97);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
 }
-
-.bboton{
+.imagen{  
     display: flex;
-    justify-content: flex-end;
+    border-radius: 20px; 
+    width: 220px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(123, 3, 251, 10.0);
+    
 }
-
-.button{
-    position:relative;
-    border-radius: 10px;
-    margin:8px 10px 0px 0px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    background-color: rgba(13, 55, 246, 0.5);
-    box-shadow: 0 0 20px rgba(123, 3, 251, 10.0)
-}
-
 .button:hover{
-    transform: translateY(-20%);
+transform:scale(0.8);
+/* transform: translateY(-20px) scale(1.2); */
 }
 
-.imagen{
-    width: -20px;
-    margin-top: -15px;
+.container{
+    position: fixed;
+    background-size:cover ;
+    width: 400px;
+    height: 100px;
+    animation: rotate 60s linear infinite;
+    position: absolute;
+    opacity: 0.9;
     
+    animation-delay: +1s;
+    }
+    @keyframes rotate{
+        0%{
+            transform:perspective(300px) rotateY(360deg) translateZ(450px);
+            z-index: 10;
+        }
+        100%{
+            z-index: 0;
+        }
+        to{
+            transform:perspective(300px)rotateY(0) translateZ(450px);
+        } 
 }
 
-.piecarta{
-    margin: 0;
-    background-color:rgb(14, 195, 195, 0.5);
-    font-family:serif; 
-    border-radius: 0px 0px 30px 30px;
-    
+.container:hover{
+   animation-play-state: paused;
 }
 
-
-.link{
- text-decoration: none;
  
- 
-}
 
-.ids{
-  font-size: 30px;
- margin-top: -25px;
- color: black;  
- border-radius: 50px;
- border:solid 3px;
- width:25% ;
- margin-left: 8px;
- background-color: rgb(11, 240, 240, 0.3);
-}
-.ids:hover{
-    transform: translateY(-10%);
-    transition: 0.5s ease;
-
-}
