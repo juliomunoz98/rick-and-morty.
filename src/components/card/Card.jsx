@@ -7,7 +7,7 @@ export default function Card({id, name, species, image, gender, onClose }) {
    
    <div className={styles.container}>
       <cartas className={styles.carta}>   
-      <div >
+       <div >
          <div className={styles.idboton}> 
             
               
@@ -25,12 +25,7 @@ export default function Card({id, name, species, image, gender, onClose }) {
                       
            </cartas>                  
                        
-            
-                   {/* <div className={styles.piecarta}>  */}           
-                   {/* <h2>{species}</h2>
-                       <h2>{gender}</h2> */}        
-                   {/* </div> */} 
-                   
+             {/* <img url="https://www.vhv.rs/dpng/d/4-47590_rick-and-morty-flying-saucer-hd-png-download.png" alt="no found" />       */}
         </div>
          
    );

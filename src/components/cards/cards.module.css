@@ -1,22 +1,6 @@
 .carta{
-display: flex;
-position:absolute;
-left: 400px;
-top: 200px;
-  /* height: 300px;
-  width: 300px;
-  animation: rotate 30s linear infinite;
-position: absolute;
-  }
-    @keyframes rotate{
-        0%{
-            transform: perspective(1000px)rotateY(0deg);
-        }
-        100%{
-            transform: perspective(1000px)rotateY(360deg);
-        }  */
-
+ display: flex;
+ flex-wrap: wrap;
 }; 
-
 
 

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+// import './App.css';
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
 import Cards from './components/cards/Cards.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import {Routes, Route, useLocation, useNavigate} from "react-router-dom"
 import Form from './components/Form/Form';
-
+import styles from "./App.module.css"
 
 function App () {
   const navigate =useNavigate();
@@ -51,7 +51,7 @@ useEffect(() => {
 },[access, navigate]);
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className={styles.App }>
       {location.pathname !== "/" &&
        <Nav onSearch={onSearch} />}
         
@@ -62,8 +62,9 @@ useEffect(() => {
           <Route path= "/detail/:detailId" element= {<Detail />}/>
         </Routes>
 
-         
-                      
+         <div >
+          <img className={styles.nave} src="https://static.tumblr.com/6b347bb510871189c90e782f2accc06b/yre31ty/WVLoedopr/tumblr_static_bbicigegeggsoooc8wg800ow4.png" alt='no found'/>   
+         </div>       
     </div>
   );
 }

@@ -55,31 +55,22 @@ transform:scale(2.0);
 }
 
 .container{
-    position: fixed;
-    background-size:cover ;
-    width: 400px;
-    height: 100px;
-    animation: rotate 60s linear infinite;
-    position: absolute;
-    opacity: 0.9;
+    padding: 5px;
+    /* position: fixed;
+    background-size:cover ; */
+    /* width: 10px;
+    height: 10px; */
+    /*  */
+    /* position: relative; */
+    /* opacity: 0.9; */
     
-    animation-delay: 1s;
+    
     }
-    @keyframes rotate{
-        0%{
-            transform:perspective(300px) rotateY(360deg) translateZ(450px);
-            z-index: 10;
-        }
-        100%{
-            z-index: 0;
-        }
-        to{
-            transform:perspective(300px)rotateY(0) translateZ(450px);
-        } 
-}
+    
 
 .container:hover{
-   animation-play-state: paused;
+    transform:scale(1.1);
+   /* animation-play-state: paused; */
 }
 
  
